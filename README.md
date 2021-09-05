@@ -2,28 +2,15 @@
 
 ## 环境配置
 
-安装 `yarn`、`node` and `git`
+Maven
 
 ## 安装依赖
 
-```bash
-Maven
-```
+JavaFX 、 Swing GUI
 
-## 指令参考
+## 插件参考
 
-Scripts provided in `package.json`. It's safe to modify or add additional script:
-
-### 启动项目
-
-```bash
-
-```
-### 打包
-
-```bash
-
-```
+JFormDesigner
 
 ## Directory Structure Description
 
