@@ -1,9 +1,8 @@
 # Soul Knight
 
-## 环境配置
+## 需求分析
 
-<<<<<<< HEAD
-Maven
+
 
 ## 安装依赖
 
@@ -12,33 +11,37 @@ JavaFX 、 Swing GUI
 ## 插件参考
 
 JFormDesigner
-=======
-JavaFX 
 
-## 安装依赖
+## 技术参考
 
-```bash
-Maven
-```
->>>>>>> fa8cbe432a201c075d7bb89394589f0fdfae4527
+https://blog.csdn.net/lzs781/article/details/96515338
+https://blog.csdn.net/lzs781/article/details/97617650
+https://blog.csdn.net/lzs781/article/details/97617723
 
 ## Directory Structure Description
 
-```
-├── public                   # 公共资源  
-├── src  
-│   ├──  
-│   ├── 
-│   ├── 
-│   ├── 
-│   ├──   
-│   ├──  
-│   ├── 
-│   ├──  
-│   ├── 
-│   ├──   
-│   └──  
-├── tests                    # 测试工具  
+```                
+├── Client
+|    ├──
+|    ├──
+│    ├── src
+│         ├── main
+│         ├── common
+│         ├── PlayerA
+|               ├──
+|               ├──
+│         ├── PlayerB
+|               ├──
+|               ├──
+│ 
+├── Server
+|     ├──
+|     ├──
+│     ├── src
+│           ├── main
+│           ├── common
+│           ├── Server
+│                
 ├── README.md
 ├──  
 └── 
