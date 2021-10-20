@@ -1,8 +1,18 @@
 # Soul Knight
 
 ## 需求分析
-
-
+GUI:Login interface
+GUI:Home interface
+public part:Map
+public part:Room
+Creature:Player
+Creature:Enemy
+Entity:Bullet
+Entity:Weapon
+Database
+Controller design:Keyboard
+Controller design:Al
+Test
 
 ## 安装依赖
 
@@ -20,29 +30,3 @@ https://blog.csdn.net/lzs781/article/details/97617723
 
 ## Directory Structure Description
 
-```                
-├── Client
-|    ├──
-|    ├──
-│    ├── src
-│         ├── main
-│         ├── common
-│         ├── PlayerA
-|               ├──
-|               ├──
-│         ├── PlayerB
-|               ├──
-|               ├──
-│ 
-├── Server
-|     ├──
-|     ├──
-│     ├── src
-│           ├── main
-│           ├── common
-│           ├── Server
-│                
-├── README.md
-├──  
-└── 
-```
