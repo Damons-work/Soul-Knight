@@ -2,7 +2,7 @@ import javax.swing.*;
 
 public class Element extends JLabel {
     ImageIcon imageIcon;
-    int size=30;
+    int size=50;
 
 
 

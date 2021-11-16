@@ -4,7 +4,7 @@ public class Wall extends JLabel {
     int x;
     int y;
     ImageIcon imageIcon;
-    int width=30;
+    int width=50;
     int height;
     int flag;//0为墙砖0,没有下部分,1为墙砖1,包含下部分
 

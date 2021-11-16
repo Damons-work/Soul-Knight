@@ -2,9 +2,9 @@ import javax.swing.*;
 
 public class Home extends JPanel {
 
-    int countX=20;
-    int countY=12;
-    int size=30;
+    int countX=21;
+    int countY=13;
+    int size=50;
 
     Floor[][] floors=new Floor[countX][countY];
 
@@ -40,9 +40,9 @@ public class Home extends JPanel {
     public Home(){
         initFloors();
 
-        knight=new Role("picture/Role/knight_1.png",floors[15][0]);
-        paladin=new Role("picture/Role/paladin.png",floors[14][0]);
-        assassin=new Role("picture/Role/assassin.png",floors[10][6]);
+        knight=new Role("picture/Role/knight_1.png",floors[15][1]);
+        paladin=new Role("picture/Role/paladin.png",floors[14][1]);
+        assassin=new Role("picture/Role/assassin.png",floors[10][7]);
         ranger=new Role("picture/Role/ranger.png",floors[14][6]);
         sharpshooter=new Role("picture/Role/sharpshooter.png",floors[12][5]);
         werewolf=new Role("picture/Role/werewolf.png",floors[14][9]);
