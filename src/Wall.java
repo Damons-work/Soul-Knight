@@ -8,10 +8,14 @@ public class Wall extends JLabel {
     int height;
     int flag;//0为墙砖0,没有下部分,1为墙砖1,包含下部分
 
+
+
     public Wall(int x,int y,int flag){
         this.x=x;
         this.y=y;
         this.flag=flag;
+
+
 
         switch (flag){
             case 0:
@@ -25,11 +29,16 @@ public class Wall extends JLabel {
             default:
                 System.out.println("flag数值出现错误");
         }
+
+
+
         imageIcon=PhotoTools.change(imageIcon,width,height);
         this.setIcon(imageIcon);
         this.setVisible(true);
         this.setBounds(x*width,y*width,width,height);
     }
+
+
 
 
 }

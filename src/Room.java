@@ -1,8 +1,28 @@
 import javax.swing.*;
 
-public class Room extends JPanel {
+public class Room extends JPanel implements Size{
+    final int Max_countX=30;
+    final int Max_countY=30;
+    //区块大小
+    final int BlockCountX=30;
+    final int BlockCountY=30;
+    final int BlockWidth=BlockCountX*Size;
+    final int BlockHeight=BlockCountY*Size;
+    //房间的大小
     int countX;
     int countY;
+    //第几个房间(打算做成Room的二维数组储存一层地牢)
+    int roomX;
+    int roomY;
+    //这个区块的左上角坐标(房间位于区块中央以保证通道的联通)
+    int beginX;
+    int beginY;
+    //房间类型,1为初始房间,2为传送门房间,3为boss房间,4-10预留给商店等非战斗房间,11以后为普通战斗房间
+    int flag;
+
+    //房间左上角坐标(相对于区块)
+    int roomBeginX;
+    int roomBeginY;
 
     boolean connectUP=false;
     boolean connectDown=false;
@@ -11,19 +31,36 @@ public class Room extends JPanel {
 
 
 
-    public Room(int countX,int countY){
+    public Room(int flag,int roomX,int roomY){
+
         this.setLayout(null);
-        this.countX=countX;
-        this.countY=countY;
+        this.flag=flag;
+
+        this.roomX=roomX;
+        this.roomY=roomY;
+
+        beginX=countX*BlockWidth;
+        beginY=countY*BlockHeight;
+        switch (flag){
+            case 1:
+                countX=10;
+                countY=10;
+                roomBeginX=(BlockWidth-countX*Size)/2;
+                roomBeginY=(BlockHeight-countY*Size)/2;
+
+                break;
+
+        }
         buildFloor();
-        buildWall();
+//        buildWall();
         this.setVisible(true);
     }
+
     public void buildFloor(){
         Floor[][] floors=new Floor[countX][countY];
         for(int x=0;x<countX;x++){
             for(int y=0;y<countY;y++){
-                floors[x][y]=new Floor(x,y);
+                floors[x][y]=new Floor(roomBeginX,roomBeginY,x,y);
                 this.add(floors[x][y]);
             }
         }
