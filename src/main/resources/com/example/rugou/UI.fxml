@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.example.rugou.StatusPane?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="640" prefWidth="480">
+    <StatusPane fx:id="0" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0"
+                AnchorPane.bottomAnchor="440"></StatusPane>
+    <Pane fx:id="1" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="40" AnchorPane.rightAnchor="0"
+          AnchorPane.bottomAnchor="0"></Pane>
+</AnchorPane>
